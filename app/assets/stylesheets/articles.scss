@@ -1,3 +1,75 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: #E6F5FC;
+  font-family: 'VT323', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 2px #ff0000;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+a:visited {
+  color: blue;
+}
+
+li {
+  padding-left: 50px;
+}
+
+
+.flash {
+    animation-name: flash;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: red;}
+    to {color: yellow;}
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+label, input {
+    display: inline-block;
+}
+
+label {
+    width: 30%;
+    text-align: right;
+}
+
+label + input {
+    width: 30%;
+    margin: 0 30% 0 4%;
+}
+
+input + input {
+    float: right;
+}
+
+#content_field {
+  width: 520px;
+  height: 324px;
+}

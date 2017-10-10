@@ -2,10 +2,10 @@
 <div class="post">
 <%= form_for(@article) do |f| %>
   <%= f.label :title %>
-  <%= f.text_field :title %>
+  <%= f.text_field :title, :id => "title_field" %>
 
   <%= f.label :content %>
-  <%= f.text_area :content %>
+  <%= f.text_area :content, :id => "content_field" %>
 
   <%= f.submit %>
 <% end %>
